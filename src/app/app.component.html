@@ -11,7 +11,7 @@
             {{ server.status }}
           </span>
           <!-- For more pipes: https://angular.io/api?query=pipe -->
-          <strong>{{ server.name | shorten }}</strong> |
+          <strong>{{ server.name | shorten:15:" Hello" }}</strong> |
             {{ server.instanceType | uppercase}} |
            {{ server.started | date:'fullDate' | uppercase }}
         </li>
