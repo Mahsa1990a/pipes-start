@@ -5,11 +5,13 @@ import { FormsModule } from '@angular/forms';
 // imports of the TypeScript types
 import { AppComponent } from './app.component';
 import { ShortenPipe } from './shorten.pipe';
+import { FilterPipe } from './filter.pipe';
 
 @NgModule({
   declarations: [ // components, directives, pipes for this module
     AppComponent,
-    ShortenPipe
+    ShortenPipe,
+    FilterPipe
   ],
   imports: [ // module packages providing Angular functionalities
             // (BrowserModule, FormsModule ...)and custom modules (MyFeatureModule, SharedModule  ... )
