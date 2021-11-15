@@ -10,6 +10,7 @@
             class="badge">
             {{ server.status }}
           </span>
+          <!-- For more pipes: https://angular.io/api?query=pipe -->
           <strong>{{ server.name }}</strong> |
             {{ server.instanceType | uppercase}} |
            {{ server.started | date:'fullDate' }}
