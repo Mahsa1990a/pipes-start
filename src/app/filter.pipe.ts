@@ -1,7 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'filter'
+  name: 'filter',
+  pure: false //will add filtered element after filtering
 })
 export class FilterPipe implements PipeTransform {
   // value is arr of servers:
